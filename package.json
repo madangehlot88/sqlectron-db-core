@@ -1,6 +1,6 @@
 {
     "name": "sqlectron-db-core2",
-    "version": "0.11.0",
+    "version": "0.0.1",
     "description": "sqlectron-db-core",
     "main": "dist/index.js",
     "author": "The SQLECTRON Team",
@@ -12,20 +12,7 @@
         "eslint": "eslint . --ext .js,.jsx,.ts",
         "lint": "npm run eslint && npm run check-types",
         "format": "prettier --write \"**/*.{js,ts,json,md}\"",
-        "format:check": "prettier --check \"**/*.{js,ts,json,md}\"",
-        "test:mysql": "DB_ADAPTERS=mysql npm run test",
-        "test:mariadb": "DB_ADAPTERS=mariadb npm run test",
-        "test:sqlite": "DB_ADAPTERS=sqlite npm run test",
-        "test:sqlserver": "DB_ADAPTERS=sqlserver npm run test",
-        "test:postgresql": "DB_ADAPTERS=postgresql npm run test",
-        "test:redshift": "DB_ADAPTERS=redshift npm run test",
-        "test:cassandra": "DB_ADAPTERS=cassandra npm run test",
-        "test": "mocha --exit --timeout 40000 --require ts-node/register --reporter spec \"./spec/**/*.spec.ts\"",
-        "test:coverage": "nyc --reporter=text mocha --exit --timeout 4000 --require ts-node/register --reporter spec \"./spec/**/*.spec.ts\"",
-        "watch-test": "mocha --require ts-node/register --watch --reporter spec \"./spec/**/*.spec.ts\"",
-        "prepublishOnly": "echo \"Do not run publish directly, run publisher\" && exit 1",
-        "publisher": "publisher",
-        "prepare": "husky install"
+        "format:check": "prettier --check \"**/*.{js,ts,json,md}\""
     },
     "keywords": [
         "sqlectron",
