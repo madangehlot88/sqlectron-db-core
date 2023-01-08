@@ -68,9 +68,8 @@ export default class SqlServerAdapter extends AbstractAdapter {
         max: 5,
       },
       options: {
-        encrypt: !!this.server.config.ssl,
-        appName: this.server.config.applicationName || 'sqlectron',
-        enableArithAbort: true,
+        encrypt: true,
+        trustServerCertificate: false // change to true for local dev / self-signed certs
       },
     };
 
